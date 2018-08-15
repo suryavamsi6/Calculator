@@ -45,7 +45,7 @@
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="220dp"
-        android:text="Subtract"
+        android:text="Add"
         app:layout_constraintEnd_toEndOf="@+id/subtract"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/subtract"
