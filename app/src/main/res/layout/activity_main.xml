@@ -8,6 +8,22 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/butc"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CLR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
         android:id="@+id/add"
         android:layout_width="82dp"
         android:layout_height="42dp"
@@ -64,36 +80,6 @@
         app:layout_constraintStart_toStartOf="@+id/subtract"
         app:layout_constraintTop_toBottomOf="@+id/multiply"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="377dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Result"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/number"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/number"
-        app:layout_constraintTop_toTopOf="@+id/number"
-        app:layout_constraintVertical_bias="0.189" />
-
-    <TextView
-        android:id="@+id/number"
-        android:layout_width="377dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Number 1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143" />
 
     <Button
         android:id="@+id/but4"
@@ -241,4 +227,34 @@
         app:layout_constraintStart_toEndOf="@+id/but2"
         app:layout_constraintTop_toTopOf="@+id/add"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="424dp"
+        android:layout_marginTop="8dp"
+        android:text="Result"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
+
 </android.support.constraint.ConstraintLayout>
