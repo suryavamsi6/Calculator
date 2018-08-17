@@ -23,6 +23,7 @@ String text;
         add = (Button)findViewById(R.id.add);
         subtract = (Button)findViewById(R.id.subtract);
         multiply = (Button)findViewById(R.id.multiply);
+        divide = (Button)findViewById(R.id.divide);
         but1 = (Button)findViewById(R.id.but1);
         but2 = (Button)findViewById(R.id.but2);
         but3 = (Button)findViewById(R.id.but3);
@@ -41,7 +42,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "1";
+                text = text + "1";
                 edt.setText(text);
             }
         });
@@ -49,7 +50,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "2";
+                text = text + "2";
                 edt.setText(text);
             }
         });
@@ -57,7 +58,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "3";
+                text = text + "3";
                 edt.setText(text);
             }
         });
@@ -65,7 +66,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "4";
+                text = text + "4";
                 edt.setText(text);
             }
 
@@ -74,7 +75,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "5";
+                text = text + "5";
                 edt.setText(text);
             }
         });
@@ -82,7 +83,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "6";
+                text = text + "6";
                 edt.setText(text);
             }
         });
@@ -90,7 +91,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "7";
+                text = text + "7";
                 edt.setText(text);
             }
         });
@@ -98,7 +99,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "8";
+                text = text + "8";
                 edt.setText(text);
             }
         });
@@ -106,7 +107,15 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + "9";
+                text = text + "9";
+                edt.setText(text);
+            }
+        });
+        but0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text = String.valueOf(edt.getText());
+                text = text + "0";
                 edt.setText(text);
             }
         });
@@ -114,7 +123,7 @@ String text;
             @Override
             public void onClick(View v) {
                 text = String.valueOf(edt.getText());
-                text+= text + ".";
+                text = text + ".";
                 edt.setText(text);
             }
         });
