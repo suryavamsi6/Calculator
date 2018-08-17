@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 TextView result;
 EditText number1,number2;
-Button add,subtract,multiply,divide;
+Button add,subtract,multiply,divide,button1;
 float num1,num2,result_num;
 String input1,input2;
     @Override
